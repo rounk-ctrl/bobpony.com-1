@@ -1,0 +1,36 @@
+---
+description: Bob Pony's website
+layout: default
+permalink: /
+title: Bob Pony
+---
+<link href="/css/main.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <!-- Preloader -->
+   <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
+<section class="section hero is-fullheight is-black">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div class="columns is-desktop is-vcentered is-centered">
+        <div class="column is-narrow">
+          <h1 class="title home is-size-1">{{page.title}}</h1>
+            <a href="https://www.youtube.com/channel/UCAZzz2Dd9Xh6vTjNcxhqPZw" class="link has-tooltip-bottom" data-tooltip="YouTube"> <span class="icon is-large"> <i class="icons fab fa-youtube fa-3x"></i> </span> </a>
+            <a href="https://twitter.com/TheBobPony" class="link has-tooltip-bottom" data-tooltip="Twitter"> <span class="icon is-large"> <i class="icons fab fa-twitter fa-3x"></i> </span> </a>
+            <a href="https://discord.me/bobpony" class="link has-tooltip-bottom" data-tooltip="Discord Server"> <span class="icon is-large"> <i class="icons fab fa-discord fa-3x"></i> </span> </a>
+			<a href="https://downloadui.bobpony.com/" class="link has-tooltip-bottom" data-tooltip="Downloads"> <span class="icon is-large"> <i class="icons fas fa-download fa-3x"></i> </span> </a>
+			<a href="mailto:me@bobpony.org" class="link has-tooltip-bottom" data-tooltip="E-mail"> <span class="icon is-large"> <i class="icons fas fa-envelope-open-text fa-3x"></i> </span> </a>
+        </div>
+      </div>
+	  <a href="https://github.com/TheBobPony/bobpony.com" class="link">View site on GitHub</a>
+    </div>
+  </div>
+  <script>
+    $(window).on('load', function() { // makes sure the whole site is loaded
+  $('#status').fadeOut(); // will first fade out the loading animation
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+  $('body').delay(350).css({'overflow':'visible'});
+})
+  </script>
+</section>
